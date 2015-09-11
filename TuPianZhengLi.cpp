@@ -22,10 +22,10 @@ int main(int argc, char const *argv[])
 {
 	char a[MAXSIZE];
 	printf("plase input sort num&char:");
-	gets(a);
-	qsort(a,strlen(a),sizeof(char),compare_char);
-	printf("%s",a);
+	gets(a);	
 
+	qsort(a, strlen(a),sizeof(char),compare_char);
+	printf("%s",a);
 
 	return 0;
 }
