@@ -2,7 +2,7 @@
 
 int main(int argc, char const *argv[])
 {
-	int i,j,n=0,count=0;
+	int i,j,n=0,count=0,temp;
 	scanf("%d",&n);
 	for (i = 1; i <= n; ++i)
 	{
@@ -11,14 +11,16 @@ int main(int argc, char const *argv[])
 			count++;
 		else
 		{
-			while(i)
+
+		temp=i;
+			while(temp)
 			{
-				if(i%10==7)
+				if(temp%10==7)
 				{
 					count++;
 					break;
 				}
-				i/=10;
+				temp/=10;
 
 			}
 		}
